@@ -18,25 +18,29 @@
     <section class="container pt-wrapper">
         <div class="row">
             <aside class="col-md-3 col-sm-12 pt-left-menu">
-                <form action="#" method="post">
-                    <div>
-                        <label for="study-type">Study type:</label>
-                        <select name="study-type" id="study-type">
+                <form action="#" method="post" class="pt-aside-form form-inline">
+                    <div class="row form-group">
+                        <label for="study-type" class="col-sm-7">Study type:</label>
+                        <select name="study-type" id="study-type" class="col-sm-5 form-control">
                             <option value="Choice 1">Choice 1</option>
                             <option value="Choice 2">Choice 2</option>
                             <option value="Choice 3">Choice 3</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="cels-number">Number of cels:</label>
-                        <input type="number" name="cels-number" id="cels-number" min="0" max="9" value="1">
+                    <div class="row form-group">
+                        <label for="cels-number" class="col-sm-7">Number of cels:</label>
+                        <input type="number" name="cels-number" id="cels-number" class="col-sm-5 form-control" min="0" max="9" step="1" value="1">
                     </div>
-                    <div>
-                        <h4>Identical cells:</h4>
-                        <input type="radio" name="identical-cells" id="identical-cells-yes" value="Yes" checked>
-                        <label for="identical-cells-yes">Yes</label>
-                        <input type="radio" name="identical-cells" id="identical-cells-no" value="No">
-                        <label for="identical-cells-no">No</label>
+                    <div class="row form-group">
+                        <label for="identical-cells-yes" class="col-sm-7">Identical cells:</label>
+                        <div>
+                            <label for="identical-cells-yes">
+                                <input type="radio" name="identical-cells" id="identical-cells-yes" value="Yes" checked> Yes
+                            </label>
+                            <label for="identical-cells-no">
+                                <input type="radio" name="identical-cells" id="identical-cells-no" value="No"> No
+                            </label>
+                        </div>
                     </div>
                 </form>
             </aside>
@@ -67,40 +71,73 @@
                             <div class="pt-date-availability-selector"></div>
                         </div>
                         <div class="pt-inner-circle-content-wrapper">
-                            <form action="" method="post">
+                            <form action="" method="post" class="pt-pricing-form">
                                 <div class="pt-row-top pt-language-content">
-                                    <ul>
-                                        <li>
-                                            <input type="radio" name="pt-language-choose" id="pt-language-german">
-                                            <label for="pt-language-german">German</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="pt-language-choose" id="pt-language-spanish">
-                                            <label for="pt-language-spanish">Spanish</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="pt-language-choose" id="pt-language-english" checked>
-                                            <label for="pt-language-english">English</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="pt-language-choose" id="pt-language-french">
-                                            <label for="pt-language-french">French</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="pt-language-choose" id="pt-language-mandarin">
-                                            <label for="pt-language-mandarin">Mandarin</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="pt-language-choose" id="pt-language-portuguese">
-                                            <label for="pt-language-portuguese">Portuguese</label>
-                                        </li>
-                                    </ul>
+                                    <div class="radio form-group">
+                                        <input type="radio" name="pt-language-choose" id="pt-language-german">
+                                        <label class="control-label" for="pt-language-german">German</label>
+                                    </div>
+                                    <div class="radio form-group">
+                                        <input type="radio" name="pt-language-choose" id="pt-language-spanish">
+                                        <label class="control-label" for="pt-language-spanish">Spanish</label>
+                                    </div>
+                                    <div class="radio form-group">
+                                        <input type="radio" name="pt-language-choose" id="pt-language-english" checked>
+                                        <label class="control-label" for="pt-language-english">English</label>
+                                    </div>
+                                    <div class="radio form-group">
+                                        <input type="radio" name="pt-language-choose" id="pt-language-french">
+                                        <label class="control-label" for="pt-language-french">French</label>
+                                    </div>
+                                    <div class="radio form-group">
+                                        <input type="radio" name="pt-language-choose" id="pt-language-mandarin">
+                                        <label class="control-label" for="pt-language-mandarin">Mandarin</label>
+                                    </div>
+                                    <div class="radio form-group">
+                                        <input type="radio" name="pt-language-choose" id="pt-language-portuguese">
+                                        <label class="control-label" for="pt-language-portuguese">Portuguese</label>
+                                    </div>
                                 </div>
                                 <div class="pt-row-top pt-sample-size-content">
-                                    <label for="sample-size">Sample size for Cell 1:</label>
-                                    <input type="number" id="sample-size" name="sample-size" min="0" value="150">
+                                    <div class="form-group row">
+                                        <label for="sample-size" class="col-md-8">Sample size for Cell 1:</label>
+                                        <div class="col-md-4">
+                                            <input type="number" id="sample-size" class="form-control" name="sample-size" min="0" value="150">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="pt-row-top pt-questions-content"></div>
+                                <div class="pt-row-top pt-questions-content form-group">
+                                    <div class="form-group row">
+                                        <label for="brand-question" class="col-md-7">Brand question:</label>
+                                        <div class="col-md-5">
+                                            <input type="number" id="brand-question" class="form-control col-md-6" name="brand-question" min="0" value="10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="one-word-question" class="col-md-7">One word question:</label>
+                                        <div class="col-md-5">
+                                            <input type="number" id="one-word-question" class="form-control" name="one-word-question" min="0" value="8">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="feeling-likes-question" class="col-md-7">Feeling / likes question:</label>
+                                        <div class="col-md-5">
+                                            <input type="number" id="feeling-likes-question" class="form-control" name="feeling-likes-question" min="0" value="38">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="story-question" class="col-md-7">Story question</label>
+                                        <div class="col-md-5">
+                                            <input type="number" id="story-question" class="form-control" name="story-question" min="0" value="1098">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="long-questions" class="col-md-7">Long questions:</label>
+                                        <div class="col-md-5">
+                                            <input type="number" id="long-questions" class="form-control" name="long-questions" min="0" value="1">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="pt-row-top pt-codebook-translation-content"></div>
                                 <div class="pt-row-top pt-verbatims-translation-content"></div>
                                 <div class="pt-row-top pt-verbatims-extractions-content"></div>

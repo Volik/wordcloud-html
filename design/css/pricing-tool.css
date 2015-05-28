@@ -1,3 +1,22 @@
+/*
+bootstrap overrides
+ */
+
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox],
+.radio input[type=radio],
+.radio-inline input[type=radio] {
+    margin: 3px 0 0 0;
+}
+/*
+END bootstrap overrides
+ */
+
+.pt-aside-form .form-group {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
 .pt-wheel {
     position: relative;
 }
@@ -121,6 +140,10 @@
     z-index: 100;
 }
 
+.pt-pricing-form label {
+    font-weight: normal;
+}
+
 .pt-inner-circle {
     display: none;
     position: absolute;
@@ -157,7 +180,7 @@
 .pt-row-bottom {
     position: absolute;
     bottom: 0;
-    left: 90px;
+    left: 70px;
     width: 140px;
     height: 86px;
 }
@@ -283,15 +306,21 @@
 
 .pt-inner-circle-content-wrapper {
     position: absolute;
-    top: 146px;
-    left: 140px;
-    width: 320px;
-    height: 320px;
+    top: 150px;
+    left: 160px;
+    width: 260px;
+    height: 330px;
     z-index: 100;
 }
 
 .pt-language-content {
     display: none;
+    width: 50%;
+    margin: 10% auto 10% 35%;
+}
+
+.radio > label:hover {
+    color: #0083e8;
 }
 
 .buttons-wrapper {
@@ -304,13 +333,32 @@
 
 .pt-sample-size-content {
     display: none;
+    width: 100%;
+    margin: 40% auto;
 }
 
 #sample-size {
-    width: 50px;
+    width: 98px;
+    display: inline-block;
+    text-align: right;
 }
 
-.pt-questions-content {}
+.pt-questions-content {
+    display: none;
+}
+
+.pt-questions-content .row {
+    margin-bottom: 10px;
+}
+
+.pt-sample-size-content label,
+.pt-questions-content label {
+    margin-top: 4px;
+}
+
+.pt-questions-content .form-control {
+    text-align: right;
+}
 
 .pt-codebook-translation-content {}
 
@@ -390,7 +438,7 @@ buttons
 
 .button-accept:hover {
     color: #ffffff;
-    background: #50677e;
+    background: #6e0cad;
 }
 
 .button-cancel {
