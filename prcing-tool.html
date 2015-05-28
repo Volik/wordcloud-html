@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="yarnaid">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pricnig tool</title>
+    <link rel="stylesheet" href="design/css/bootstrap.min.css">
+    <link rel="stylesheet" href="design/css/pricing-tool.css">
+    <script src="design/js/jquery-2.1.3.min.js"></script>
+    <script src="design/js/bootstrap.min.js"></script>
+    <script src="design/js/pricing-tool.js"></script>
+</head>
+
+<body>
+    <section class="container pt-wrapper">
+        <div class="row">
+            <aside class="col-md-3 col-sm-12 pt-left-menu">
+                <form action="#" method="post">
+                    <div>
+                        <label for="study-type">Study type:</label>
+                        <select name="study-type" id="study-type">
+                            <option value="Choice 1">Choice 1</option>
+                            <option value="Choice 2">Choice 2</option>
+                            <option value="Choice 3">Choice 3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cels-number">Number of cels:</label>
+                        <input type="number" name="cels-number" id="cels-number" min="0" max="9" value="1">
+                    </div>
+                    <div>
+                        <h4>Identical cells:</h4>
+                        <input type="radio" name="identical-cells" id="identical-cells-yes" value="Yes" checked>
+                        <label for="identical-cells-yes">Yes</label>
+                        <input type="radio" name="identical-cells" id="identical-cells-no" value="No">
+                        <label for="identical-cells-no">No</label>
+                    </div>
+                </form>
+            </aside>
+            <section class="col-md-9 cols-sm-12 pt-body">
+                <h6>Choose cell to fill the data:</h6>
+                <div class="pt-wheel">
+                    <!-- <div class="pt-wheel-bg"></div> -->
+                    <div class="pt-outher-circle"></div>
+                    <div class="pt-options-wrapper">
+                        <ul class="pt-options-list">
+                            <li><a href="#">1</a>
+                            </li>
+                            <li><a href="#">2</a>
+                            </li>
+                            <li><a href="#">3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-inner-circle-wrapper">
+                        <div class="pt-inner-circle"></div>
+                        <div class="pt-inner-circle-selector-wrapper">
+                            <div class="pt-language-selector"></div>
+                            <div class="pt-sample-size-selector"></div>
+                            <div class="pt-questions-selector"></div>
+                            <div class="pt-codebook-translation-selector"></div>
+                            <div class="pt-verbatims-translation-selector"></div>
+                            <div class="pt-verbatims-extractions-selector"></div>
+                            <div class="pt-date-availability-selector"></div>
+                        </div>
+                        <div class="pt-inner-circle-content-wrapper">
+                            <form action="" method="post">
+                                <div class="pt-row-top pt-language-content">
+                                    <ul>
+                                        <li>
+                                            <input type="radio" name="pt-language-choose" id="pt-language-german">
+                                            <label for="pt-language-german">German</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pt-language-choose" id="pt-language-spanish">
+                                            <label for="pt-language-spanish">Spanish</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pt-language-choose" id="pt-language-english" checked>
+                                            <label for="pt-language-english">English</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pt-language-choose" id="pt-language-french">
+                                            <label for="pt-language-french">French</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pt-language-choose" id="pt-language-mandarin">
+                                            <label for="pt-language-mandarin">Mandarin</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pt-language-choose" id="pt-language-portuguese">
+                                            <label for="pt-language-portuguese">Portuguese</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pt-row-top pt-sample-size-content">
+                                    <label for="sample-size">Sample size for Cell 1:</label>
+                                    <input type="number" id="sample-size" name="sample-size" min="0" value="150">
+                                </div>
+                                <div class="pt-row-top pt-questions-content"></div>
+                                <div class="pt-row-top pt-codebook-translation-content"></div>
+                                <div class="pt-row-top pt-verbatims-translation-content"></div>
+                                <div class="pt-row-top pt-verbatims-extractions-content"></div>
+                                <div class="pt-row-top pt-date-availability-content"></div>
+                                <div class="pt-row-bottom buttons-wrapper">
+                                    <input type="submit" class="btn button-accept" value="Accept">
+                                    <input type="submit" class="btn button-cancel" value="Cancel">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="pt-results-wrapper">
+                        <div class="pt-result-cost">
+                            <h2>Cost</h2>
+                            <p class="pt-result-middle">[Fill all segments]</p>
+                        </div>
+                        <div class="pt-result-timing">
+                            <h2>Timing</h2>
+                            <p class="pt-result-middle">[Fill all segments]</p>
+                        </div>
+                        <div class="pt-result-data-delivery">
+                            <h2>Data delivery</h2>
+                            <p class="pt-result-middle">[Fill all segments]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</body>
+
+</html>
