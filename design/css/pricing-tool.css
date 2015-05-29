@@ -191,15 +191,6 @@ END bootstrap overrides
     left: 180px;
     width: 243px;
     height: 85px;
-    background: url('../img/pt-language-selector.png') 0 0 no-repeat;
-}
-
-.pt-language-selector:hover {
-    background: url('../img/pt-language-selector-hover.png') 0 0 no-repeat;
-}
-
-.pt-language-selector-active {
-    background: url('../img/pt-language-selector-active.png') 0 0 no-repeat;
 }
 
 .pt-sample-size-selector {
@@ -208,15 +199,6 @@ END bootstrap overrides
     right: 12px;
     width: 181px;
     height: 206px;
-    background: url('../img/pt-sample-size-selector.png') 0 0 no-repeat;
-}
-
-.pt-sample-size-selector:hover {
-    background: url('../img/pt-sample-size-selector-hover.png') 0 0 no-repeat;
-}
-
-.pt-sample-size-selector-active {
-    background: url('../img/pt-sample-size-selector-active.png') 0 0 no-repeat;
 }
 
 .pt-questions-selector {
@@ -302,6 +284,28 @@ END bootstrap overrides
 
 .pt-date-availability-active {
     background: url('../img/pt-date-availability-active.png') 0 0 no-repeat;
+}
+/* svg hover state */
+
+.pt-language-selector:hover g,
+.pt-sample-size-selector:hover g,
+.pt-questions-selector:hover g,
+.pt-codebook-translation-selector:hover g,
+.pt-verbatims-translation-selector:hover g,
+.pt-verbatims-extractions-selector:hover g,
+.pt-date-availability-selector:hover g {
+    fill: #0083e8;
+}
+/* svg active state */
+
+.pt-language-selector-active g,
+.pt-sample-size-selector-active g,
+.pt-questions-selector-active g,
+.pt-codebook-translation-selector-active g,
+.pt-verbatims-translation-selector-active g,
+.pt-verbatims-extractions-selector-active g,
+.pt-date-availability-selector-active g {
+    fill: #6e0cad;
 }
 
 .pt-inner-circle-content-wrapper {
