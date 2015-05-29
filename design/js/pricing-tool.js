@@ -26,7 +26,7 @@ $(document).ready(function() {
             $(this).toggleClass('pt-language-selector-active');
             // remove all other active classes
             $('.pt-sample-size-selector').removeClass('pt-sample-size-selector-active');
-            $('.pt-questions-content').removeClass('pt-questions-selector-active');
+            $('.pt-questions-selector').removeClass('pt-questions-selector-active');
             // show current container and form controls
             $('.pt-language-content').fadeIn();
             $('.buttons-wrapper').fadeIn();
@@ -44,7 +44,7 @@ $(document).ready(function() {
             $(this).toggleClass('pt-sample-size-selector-active');
             // remove all other active classes
             $('.pt-language-selector').removeClass('pt-language-selector-active');
-            $('.pt-questions-content').removeClass('pt-questions-selector-active');
+            $('.pt-questions-selector').removeClass('pt-questions-selector-active');
             // show current container and form controls
             $('.pt-sample-size-content').fadeIn();
             $('.buttons-wrapper').fadeIn();

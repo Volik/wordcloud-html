@@ -207,15 +207,6 @@ END bootstrap overrides
     right: 1px;
     width: 111px;
     height: 238px;
-    background: url('../img/pt-questions-selector.png') 0 0 no-repeat;
-}
-
-.pt-questions-selector:hover {
-    background: url('../img/pt-questions-selector-hover.png') 0 0 no-repeat;
-}
-
-.pt-questions-selector-active {
-    background: url('../img/pt-questions-selector-active.png') 0 0 no-repeat;
 }
 
 .pt-codebook-translation-selector {
