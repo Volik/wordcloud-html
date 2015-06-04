@@ -465,9 +465,14 @@ buttons
     background: #0083e8;
 }
 
-.button-accept:hover {
+.button-accept:hover,
+.button-verbatim-translation:hover {
     color: #ffffff;
     background: #6e0cad;
+}
+
+.button-verbatim-translation-selected {
+    background: #000cad;
 }
 
 .button-cancel {
