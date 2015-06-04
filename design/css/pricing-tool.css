@@ -180,7 +180,7 @@ END bootstrap overrides
 .pt-row-bottom {
     position: absolute;
     bottom: 0;
-    left: 70px;
+    left: 60px;
     width: 140px;
     height: 86px;
 }
@@ -357,8 +357,26 @@ END bootstrap overrides
 
 .pt-codebook-translation-content {}
 
-.pt-verbatims-translation-content {}
+.pt-verbatims-translation-content {
+    display: none;
+}
 
+.pt-verbatims-translation-labels {
+    margin-top: 25px;
+    display: table;
+    width: 100%;
+}
+
+.pt-verbatims-translation-labels>div {
+    display: table-row;
+    height: 25px;
+    text-align: right;
+}
+
+.pt-verbatims-translation-labels>div>p{
+    width: 100%;
+} 
+ 
 .pt-verbatims-extractions-content {}
 
 .pt-date-availability-content {}
@@ -413,18 +431,34 @@ END bootstrap overrides
 .pt-result-middle {
     font-style: italic;
 }
+
+.pt-top-buttons-wrapper {
+    width: 140px;
+    margin: auto;
+}
+
+.pt-top-buttons-wrapper input {
+    text-align: center;
+    margin-bottom: 10px;    
+}
 /*
 buttons
  */
 
 .button-accept,
-.button-cancel {
+.button-cancel, 
+.button-verbatim-translation {
+    width: 140px;
     padding: 8px 39px;
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
     border-radius: 15px;
+}
+
+.button-verbatim-translation {
+    background: #aaaaaa;
 }
 
 .button-accept {

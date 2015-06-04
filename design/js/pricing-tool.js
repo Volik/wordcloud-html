@@ -1,4 +1,22 @@
 $(document).ready(function() {
+    var lastOpened='.pt-language-content';
+    var lastOpenedSelector='.pt-language-selector';
+
+    $('.pt-verbatims-translation-selector').click(
+        function() {
+            $('.pt-results-wrapper').hide();
+
+            $(lastOpened).hide();
+
+            $(this).toggleClass('pt-verbatims-translation-selector-active');
+            
+            $(lastOpenedSelector).removeClass(lastOpenedSelector+'-active');
+            $('.pt-verbatims-translation-content').fadeIn();
+            $('.buttons-wrapper').fadeIn();
+            lastOpened = '.pt-verbatims-translation-content';
+            lastOpenedSelector = '.pt-verbatims-translation-selector';
+        }
+    )
 
     $('.pt-options-list a').hover(
         function() {
@@ -20,16 +38,16 @@ $(document).ready(function() {
             // hide results
             $('.pt-results-wrapper').hide();
             // hide all other containers
-            $('.pt-sample-size-content').hide();
-            $('.pt-questions-content').hide();
+            $(lastOpened).hide();
             // set the active class
             $(this).toggleClass('pt-language-selector-active');
             // remove all other active classes
-            $('.pt-sample-size-selector').removeClass('pt-sample-size-selector-active');
-            $('.pt-questions-selector').removeClass('pt-questions-selector-active');
+            $(lastOpenedSelector).removeClass(lastOpenedSelector+'-active');
             // show current container and form controls
             $('.pt-language-content').fadeIn();
             $('.buttons-wrapper').fadeIn();
+            lastOpened = '.pt-language-content';
+            lastOpenedSelector = '.pt-questions-selector';
         }
     );
 
@@ -38,16 +56,16 @@ $(document).ready(function() {
             // hide results
             $('.pt-results-wrapper').hide();
             // hide all other containers
-            $('.pt-language-content').hide();
-            $('.pt-questions-content').hide();
+            $(lastOpened).hide();
             // set the active class
             $(this).toggleClass('pt-sample-size-selector-active');
             // remove all other active classes
-            $('.pt-language-selector').removeClass('pt-language-selector-active');
-            $('.pt-questions-selector').removeClass('pt-questions-selector-active');
+            $(lastOpenedSelector).removeClass(lastOpenedSelector+'-active');
             // show current container and form controls
             $('.pt-sample-size-content').fadeIn();
             $('.buttons-wrapper').fadeIn();
+            lastOpened = '.pt-sample-size-content';
+            lastOpenedSelector = '.pt-sample-size-selector';
         }
     );
 
@@ -56,16 +74,16 @@ $(document).ready(function() {
             // hide results
             $('.pt-results-wrapper').hide();
             // hide all other containers
-            $('.pt-language-content').hide();
-            $('.pt-sample-size-content').hide();
+            $(lastOpened).hide();
             // set the active class
             $(this).toggleClass('pt-questions-selector-active');
             // remove all other active classes
-            $('.pt-sample-size-selector').removeClass('pt-sample-size-selector-active');
-            $('.pt-language-selector').removeClass('pt-language-selector-active');
+            $(lastOpenedSelector).removeClass(lastOpenedSelector+'-active');
             // show current container and form controls
             $('.pt-questions-content').fadeIn();
             $('.buttons-wrapper').fadeIn();
+            lastOpened = '.pt-questions-content';
+            lastOpenedSelector = '.pt-questions-selector';
         }
     );
 

@@ -93,7 +93,7 @@
                             <div class="pt-questions-selector">
                                 <svg width="111" height="238">
                                     <g transform="translate(0.000000,238.000000) scale(0.100000,-0.100000)"fill="#50677e" stroke="none">
-                                        <path d="M705 2308 c-159 -33 -291 -61 -292 -62 -1 -1 4 -38 12 -81 78 -437 14 -935 -172 -1349 -51 -113 -144 -280 -208 -373 l-43 -61 256 -189 c141 -103 258 -188 261 -188 12 0 159 229 223 347 164 304 273 635 330 998 19 124 22 185 22 425 0 240 -3 300 -22 422 -26 169 -28 173 -56 172 -11 0 -151 -28 -311 -61z"/>
+                                        <path d="M 705 2308 c -159 -33 -291 -61 -292 -62 -1 -1 4 -38 12 -81 78 -437 14 -935 -172 -1349 -51 -113 -144 -280 -208 -373 l-43 -61 256 -189 c141 -103 258 -188 261 -188 12 0 159 229 223 347 164 304 273 635 330 998 19 124 22 185 22 425 0 240 -3 300 -22 422 -26 169 -28 173 -56 172 -11 0 -151 -28 -311 -61z"/>
                                     </g>
                                     <defs>
                                         <path id="questions-textpath" fill="none" stroke="none" d="M 45,215 Q 100,100 85,0" />
@@ -169,7 +169,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="story-question" class="col-md-7">Story question</label>
+                                        <label for="story-question" class="col-md-7">Story question:</label>
                                         <div class="col-md-5">
                                             <input type="number" id="story-question" class="form-control" name="story-question" min="0" value="1098">
                                         </div>
@@ -182,7 +182,27 @@
                                     </div>
                                 </div>
                                 <div class="pt-row-top pt-codebook-translation-content"></div>
-                                <div class="pt-row-top pt-verbatims-translation-content"></div>
+                                <div class="pt-row-top pt-verbatims-translation-content">
+                                    <div class="pt-top-buttons-wrapper">
+                                        <input type="button" class="btn button-verbatim-translation selected" value="Language" />
+                                        <input type="button" class="btn button-verbatim-translation" value="Number" />
+                                    </div>
+                                    <div class="pt-verbatims-translation-labels form_group">
+                                        <div class="form_group row" >
+                                            <label class="col-md-9">Long questions</label> 
+                                            <input class="col-md-3" type="number"/>
+                                        </div>
+                                        <div class="form_group row" >
+                                            <label class="col-md-9">Story questions</label> 
+                                            <input class="col-md-3" type="number"/>
+                                        </div> 
+                                         
+                                        <div class="form_group row" >
+                                            <label class="col-md-9">Feeling/likes questions</label> 
+                                            <input class="col-md-3" type="number"/>
+                                        </div>  
+                                    </div>
+                                </div>
                                 <div class="pt-row-top pt-verbatims-extractions-content"></div>
                                 <div class="pt-row-top pt-date-availability-content"></div>
                                 <div class="pt-row-bottom buttons-wrapper">
