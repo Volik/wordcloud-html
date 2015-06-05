@@ -17,6 +17,7 @@
 <body>
     <section class="container pt-wrapper">
         <div class="row">
+
             <aside class="col-md-3 col-sm-12 pt-left-menu">
                 <form action="#" method="post" class="pt-aside-form form-inline">
                     <div class="row form-group">
@@ -68,7 +69,7 @@
 
                 </div>
             </aside>
-            <section class="col-md-9 cols-sm-12 pt-body">
+            <section class="col-md-9 cols-sm-12 pt-body">s
                 <h6>Choose cell to fill the data:</h6>
                 <div class="pt-wheel">
                     <!-- <div class="pt-wheel-bg"></div> -->
@@ -128,7 +129,7 @@
                                     </text>
                                 </sgv>
                             </div>
-                            <div class="pt-codebook-translation-selector">
+                            <div class="pt-codebooks-selector">
                                 <svg viewBox="0 0 220.000000 148.000000" preserveAspectRatio="xMidYMid meet">
                                     <g transform="translate(0.000000,148.000000) scale(0.100000,-0.100000)"
                                        fill="#50677e" stroke="none">
@@ -145,7 +146,7 @@
                                     </text>
                                 </svg>
                             </div>
-                            <div class="pt-verbatims-translation-selector">
+                            <div class="pt-codebook-translation-selector">
                                 <svg viewBox="0 0 221.000000 146.000000" preserveAspectRatio="xMidYMid meet">
                                     <g transform="translate(0.000000,146.000000) scale(0.100000,-0.100000)"
                                         fill="#50677e" stroke="none">
@@ -154,15 +155,15 @@
                                         27 -395 50 -455 91 -849 302 -1189 636 l-133 131 -239 -205z"/>
                                     </g>
                                     <defs>
-                                        <path id="verbatims-translation-textpath" fill="none" stroke="none" d="M 25,35 Q 150,180 450,80" />
+                                        <path id="codebook-translation-textpath" fill="none" stroke="none" d="M 25,35 Q 150,180 450,80" />
                                     </defs>
-                                    <use xlink:href="#verbatims-translation-textpath" fill="none" stroke="none" />
+                                    <use xlink:href="#codebook-translation-textpath" fill="none" stroke="none" />
                                     <text x="45" y="45" font-size="24px" fill="#ffffff">
-                                        <textPath xlink:href="#verbatims-translation-textpath">Codebook translation</textPath>
+                                        <textPath xlink:href="#codebook-translation-textpath">Codebook translation</textPath>
                                     </text>
                                 </svg>
                             </div>
-                            <div class="pt-codebooks-selector">
+                            <div class="pt-verbatim-translation-selector">
                                 <svg viewBox="0 0 110.000000 237.000000"
                                      preserveAspectRatio="xMidYMid meet">
                                     <g transform="translate(0.000000,237.000000) scale(0.100000,-0.100000)"
@@ -173,11 +174,11 @@
                                         -110z"/>
                                     </g>
                                     <defs>
-                                        <path id="codebook-translation-textpath" fill="none" stroke="none" d="M 25,10 Q 0,145 110,260" />
+                                        <path id="verbatim-translation-textpath" fill="none" stroke="none" d="M 25,10 Q 0,145 110,260" />
                                     </defs>
                                     <use xlink:href="#codebook-translation-textpath" fill="none" stroke="none" />
                                     <text x="45" y="45" font-size="24px" fill="#ffffff">
-                                        <textPath xlink:href="#codebook-translation-textpath">Verbatim translation</textPath>
+                                        <textPath xlink:href="#verbatim-translation-textpath">Verbatim translation</textPath>
                                     </text>
                                 </svg>
                             </div>
@@ -273,12 +274,12 @@
                                     </div>
                                 </div>
                                 <div class="pt-row-top pt-codebook-translation-content"></div>
-                                <div class="pt-row-top pt-verbatims-translation-content">
+                                <div class="pt-row-top pt-verbatim-translation-content">
                                     <div class="pt-top-buttons-wrapper">
                                         <input type="button" class="btn button-verbatim-translation" value="Language" />
                                         <input type="button" class="btn button-verbatim-translation" value="Number" />
                                     </div>
-                                    <div class="pt-verbatims-translation-labels form_group">
+                                    <div class="pt-verbatim-translation-labels form_group">
                                         <div class="form_group row" >
                                             <label class="col-md-9">Long questions</label> 
                                             <input class="col-md-3" type="number"/>
@@ -318,7 +319,6 @@
                                     </div>
                                 </div>
                                 <div class="pt-row-top pt-date-availability-content">
-
                                 </div>
                                 <div class="pt-row-bottom buttons-wrapper">
                                     <input type="submit" class="btn button-accept" value="Accept">

@@ -20,7 +20,7 @@ $(document).ready(function() {
         }
     );
 
-    $('.pt-language-selector, .pt-sample-size-selector, .pt-questions-selector, .pt-verbatims-translation-selector, .pt-date-availability-selector, .pt-codebooks-selector, .pt-codebook-translation-selector').click(
+    $('.pt-language-selector, .pt-sample-size-selector, .pt-questions-selector, .pt-verbatim-translation-selector, .pt-date-availability-selector, .pt-codebooks-selector, .pt-codebook-translation-selector').click(
         function() {
             // hide results
             $('.pt-results-wrapper').hide();

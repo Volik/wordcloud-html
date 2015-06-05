@@ -197,7 +197,7 @@ END bootstrap overrides
 }
 
 .pt-inner-circle {
-    display: none;
+   
     position: absolute;
     top: 88px;
     left: 87px;
@@ -261,7 +261,7 @@ END bootstrap overrides
     height: 238px;
 }
 
-.pt-codebook-translation-selector {
+.pt-codebooks-selector {
     position: absolute;
     bottom: 1px;
     right: 73px;
@@ -269,15 +269,7 @@ END bootstrap overrides
     height: 148px;
 }
 
-.pt-codebook-translation-selector:hover {
-    background: url('../img/pt-codebook-translation-selector-hover.png') 0 0 no-repeat;
-}
-
-.pt-codebook-translation-active {
-    background: url('../img/pt-codebook-translation-active.png') 0 0 no-repeat;
-}
-
-.pt-verbatims-translation-selector {
+.pt-codebook-translation-selector {
     position: absolute;
     bottom: 2px;
     left: 72px;
@@ -285,28 +277,12 @@ END bootstrap overrides
     height: 146px;
 }
 
-.pt-verbatims-translation-selector:hover {
-    background: url('../img/pt-verbatims-translation-selector-hover.png') 0 0 no-repeat;
-}
-
-.pt-verbatims-translation-active {
-    background: url('../img/pt-verbatims-translation-active.png') 0 0 no-repeat;
-}
-
-.pt-codebooks-selector {
+.pt-verbatim-translation-selector {
     position: absolute;
     bottom: 122px;
     left: 0px;
     width: 110px;
     height: 237px;
-}
-
-.pt-codebooks-selector:hover {
-    background: url('../img/pt-verbatims-extractions-selector-hover.png') 0 0 no-repeat;
-}
-
-.pt-codebooks-active {
-    background: url('../img/pt-verbatims-extractions-active.png') 0 0 no-repeat;
 }
 
 .pt-codebooks-content select {
@@ -334,7 +310,7 @@ END bootstrap overrides
 .pt-sample-size-selector:hover g,
 .pt-questions-selector:hover g,
 .pt-codebook-translation-selector:hover g,
-.pt-verbatims-translation-selector:hover g,
+.pt-verbatim-translation-selector:hover g,
 .pt-codebooks-selector:hover g,
 .pt-date-availability-selector:hover g {
     fill: #0083e8;
@@ -345,7 +321,7 @@ END bootstrap overrides
 .pt-sample-size-selector-active g,
 .pt-questions-selector-active g,
 .pt-codebook-translation-selector-active g,
-.pt-verbatims-translation-selector-active g,
+.pt-verbatim-translation-selector-active g,
 .pt-codebooks-selector-active g,
 .pt-date-availability-selector-active g {
     fill: #6e0cad;
@@ -411,23 +387,23 @@ END bootstrap overrides
     display: none;
 }
 
-.pt-verbatims-translation-content {
+.pt-verbatim-translation-content {
     display: none;
 }
 
-.pt-verbatims-translation-labels {
+.pt-verbatim-translation-labels {
     margin-top: 25px;
     display: table;
     width: 100%;
 }
 
-.pt-verbatims-translation-labels>div {
+.pt-verbatim-translation-labels>div {
     display: table-row;
     height: 25px;
     text-align: right;
 }
 
-.pt-verbatims-translation-labels>div>p{
+.pt-verbatim-translation-labels>div>p{
     width: 100%;
 } 
  
