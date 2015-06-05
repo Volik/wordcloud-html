@@ -20,75 +20,34 @@ $(document).ready(function() {
         }
     );
 
-    $('.pt-language-selector').click(
+    $('.pt-language-selector, .pt-sample-size-selector, .pt-questions-selector, .pt-verbatims-translation-selector, .pt-date-availability-selector, .pt-codebooks-selector, .pt-codebook-translation-selector').click(
         function() {
             // hide results
             $('.pt-results-wrapper').hide();
             // hide all other containers
             $(lastOpened).hide();
             // remove all other active classes
+           // alert(this);
             $(lastOpenedSelector).removeClass(lastOpenedSelector.substring(1)+'-active');
             // set the active class
-            $(this).toggleClass('pt-language-selector-active');
+            $(this).toggleClass(this.className+'-active');
             // show current container and form controls
-            $('.pt-language-content').fadeIn();
+            var content_classname = '.'+this.className.split(' ')[0].substring(0,this.className.split(' ')[0].lastIndexOf('-selector'))+'-content';
+            $(content_classname).fadeIn();
             $('.buttons-wrapper').fadeIn();
-            lastOpened = '.pt-language-content';
-            lastOpenedSelector = '.pt-language-selector';
+            lastOpened = content_classname;
+            lastOpenedSelector = '.'+this.className.split(' ')[0];
         }
     );
 
-    $('.pt-sample-size-selector').click(
+    $('.pt-progress-bar-wrapper').hover (
         function() {
-            // hide results
-            $('.pt-results-wrapper').hide();
-            // remove all other active classes
-            $(lastOpenedSelector).removeClass(lastOpenedSelector.substring(1)+'-active');
-            // hide all other containers
-            $(lastOpened).hide();
-            // set the active class
-            $(this).toggleClass('pt-sample-size-selector-active');
-            // show current container and form controls
-            $('.pt-sample-size-content').fadeIn();
-            $('.buttons-wrapper').fadeIn();
-            lastOpened = '.pt-sample-size-content';
-            lastOpenedSelector = '.pt-sample-size-selector';
-        }
-    );
-
-    $('.pt-questions-selector').click(
+            $(this)
+                .css('border', '2px solid #00F');
+        },
         function() {
-            // hide results
-            $('.pt-results-wrapper').hide();
-            // hide all other containers
-            $(lastOpened).hide();
-            // remove all other active classes
-            $(lastOpenedSelector).removeClass(lastOpenedSelector.substring(1)+'-active');
-            // set the active class
-            $(this).toggleClass('pt-questions-selector-active');
-            // show current container and form controls
-            $('.pt-questions-content').fadeIn();
-            $('.buttons-wrapper').fadeIn();
-            lastOpened = '.pt-questions-content';
-            lastOpenedSelector = '.pt-questions-selector';
-        }
-    );
-
-    $('.pt-verbatims-translation-selector').click(
-        function() {
-            // hide results
-            $('.pt-results-wrapper').hide();
-            // hide all other containers
-            $(lastOpened).hide();
-            // remove all other active classes
-            $(lastOpenedSelector).removeClass(lastOpenedSelector.substring(1)+'-active');
-            // set the active class
-            $(this).toggleClass('pt-verbatims-translation-selector-active');
-            
-            $('.pt-verbatims-translation-content').fadeIn();
-            $('.buttons-wrapper').fadeIn();
-            lastOpened = '.pt-verbatims-translation-content';
-            lastOpenedSelector = '.pt-verbatims-translation-selector';
+            $(this)
+                .css('border', '2px solid #AAA');
         }
     )
     

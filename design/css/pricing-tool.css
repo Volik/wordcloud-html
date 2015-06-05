@@ -8,9 +8,27 @@ bootstrap overrides
 .radio-inline input[type=radio] {
     margin: 3px 0 0 0;
 }
+
+.progress {
+    text-align:center;
+    box-shadow: none;
+    background: #aaaaaa;
+}
+
 /*
 END bootstrap overrides
  */
+
+.progress-value {
+    position:absolute;
+    right:0;
+    left:0;
+}
+
+.line {
+    border: 2px solid black;
+    margin: 20px 0;
+}
 
 .pt-aside-form .form-group {
     margin-bottom: 10px;
@@ -19,6 +37,40 @@ END bootstrap overrides
 
 .pt-wheel {
     position: relative;
+}
+
+.pt-progress-bar-container p {
+    text-align: center;
+    width: 100%;
+}
+.pt-progress-bar {
+    display: block;
+    border: 4px solid white;
+    border-radius: 20px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.pt-progress-bar>.progress {
+    display: inline-block;
+    width: 23.78%;
+    text-align: center;
+    border-radius: 0px;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.pt-progress-bar>.progress:first-child {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.pt-progress-bar>.progress:last-child {
+    border-radius: 0px 15px 15px 0px;
+}
+
+.pt-progress-bar-wrapper {
+    border-radius: 25px;
+    border:2px solid #aaaaaa;
 }
 
 .pt-wheel-bg {
@@ -215,7 +267,6 @@ END bootstrap overrides
     right: 73px;
     width: 220px;
     height: 148px;
-    background: url('../img/pt-codebook-translation-selector.png') 0 0 no-repeat;
 }
 
 .pt-codebook-translation-selector:hover {
@@ -232,7 +283,6 @@ END bootstrap overrides
     left: 72px;
     width: 221px;
     height: 146px;
-    background: url('../img/pt-verbatims-translation-selector.png') 0 0 no-repeat;
 }
 
 .pt-verbatims-translation-selector:hover {
@@ -243,21 +293,24 @@ END bootstrap overrides
     background: url('../img/pt-verbatims-translation-active.png') 0 0 no-repeat;
 }
 
-.pt-verbatims-extractions-selector {
+.pt-codebooks-selector {
     position: absolute;
     bottom: 122px;
     left: 0px;
     width: 110px;
     height: 237px;
-    background: url('../img/pt-verbatims-extractions-selector.png') 0 0 no-repeat;
 }
 
-.pt-verbatims-extractions-selector:hover {
+.pt-codebooks-selector:hover {
     background: url('../img/pt-verbatims-extractions-selector-hover.png') 0 0 no-repeat;
 }
 
-.pt-verbatims-extractions-active {
+.pt-codebooks-active {
     background: url('../img/pt-verbatims-extractions-active.png') 0 0 no-repeat;
+}
+
+.pt-codebooks-content select {
+    width: 50%;
 }
 
 .pt-date-availability-selector {
@@ -266,7 +319,6 @@ END bootstrap overrides
     left: 9px;
     width: 182px;
     height: 207px;
-    background: url('../img/pt-date-availability-selector.png') 0 0 no-repeat;
 }
 
 .pt-date-availability-selector:hover {
@@ -283,7 +335,7 @@ END bootstrap overrides
 .pt-questions-selector:hover g,
 .pt-codebook-translation-selector:hover g,
 .pt-verbatims-translation-selector:hover g,
-.pt-verbatims-extractions-selector:hover g,
+.pt-codebooks-selector:hover g,
 .pt-date-availability-selector:hover g {
     fill: #0083e8;
 }
@@ -294,7 +346,7 @@ END bootstrap overrides
 .pt-questions-selector-active g,
 .pt-codebook-translation-selector-active g,
 .pt-verbatims-translation-selector-active g,
-.pt-verbatims-extractions-selector-active g,
+.pt-codebooks-selector-active g,
 .pt-date-availability-selector-active g {
     fill: #6e0cad;
 }
@@ -355,7 +407,9 @@ END bootstrap overrides
     text-align: right;
 }
 
-.pt-codebook-translation-content {}
+.pt-codebook-translation-content {
+    display: none;
+}
 
 .pt-verbatims-translation-content {
     display: none;
@@ -377,9 +431,17 @@ END bootstrap overrides
     width: 100%;
 } 
  
-.pt-verbatims-extractions-content {}
+.pt-codebooks-content {
+    display: none;
+}
 
-.pt-date-availability-content {}
+.pt-codebooks-labels label {
+    text-align: left;
+}
+
+.pt-date-availability-content {
+    display: none;
+}
 
 .pt-results-wrapper {
     position: absolute;
