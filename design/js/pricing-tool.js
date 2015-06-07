@@ -51,16 +51,24 @@ $(document).ready(function() {
         }
     )
     
-    /*$('.button-verbatim-translation').click(
+    $('.button-verbatim-translation').click(
         function() {
             if(previousSelectedButton !=  null) {
-                $(previousSelectedButton).hide(0);
-                $(previousSelectedButton).removeClass("button-verbatim-translaton-selected");
-            } 
-            alert(previousSelectedButton);
-            $(this).toggleClass('button-verbatim-translaton-selected');
-            $(this).fadeIn();
+                $(previousSelectedButton).removeClass("button-verbatim-translation-selected");
+            } else 
+                $('#number').removeClass("button-verbatim-translation-selected");
+            $(this).toggleClass('button-verbatim-translation-selected');
+            
+            if(this.id=='number'){
+                $(".pt-verbatim-translation-languages").hide();
+                $(".pt-verbatim-translation-labels").fadeIn();
+            } else {
+                $(".pt-verbatim-translation-labels").hide();
+                $(".pt-verbatim-translation-languages").fadeIn();
+            }
             previousSelectedButton = this;
         }         
-    )*/
+    )
 });
+
+
