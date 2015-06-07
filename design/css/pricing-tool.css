@@ -10,15 +10,13 @@ bootstrap overrides
 }
 
 .progress {
-    text-align:center;
+    text-align: center;
     box-shadow: none;
     background: #aaaaaa;
 }
-
 /*
 END bootstrap overrides
  */
-
 /* datepicker override */
 
 #ui-datepicker-div {
@@ -47,7 +45,7 @@ END bootstrap overrides
 }
 
 .ui-datepicker tr td {
-    width:12%; 
+    width: 12%;
     border-right: 1px solid #8c8c8c;
     border-bottom: 1px solid #8c8c8c;
     height: 20px;
@@ -68,7 +66,7 @@ END bootstrap overrides
     color: white;
 }
 
-.ui-state-default:hover{
+.ui-state-default:hover {
     text-decoration: none;
 }
 
@@ -105,7 +103,6 @@ END bootstrap overrides
     width: 20%;
 }
 
-
 .ui-priority-secondary {
     font-weight: normal;
     color: #b7b7b7;
@@ -113,9 +110,9 @@ END bootstrap overrides
 /* END datepicker override */
 
 .progress-value {
-    position:absolute;
-    right:0;
-    left:0;
+    position: absolute;
+    right: 0;
+    left: 0;
 }
 
 .line {
@@ -136,6 +133,7 @@ END bootstrap overrides
     text-align: center;
     width: 100%;
 }
+
 .pt-progress-bar {
     display: block;
     border: 4px solid white;
@@ -163,7 +161,7 @@ END bootstrap overrides
 
 .pt-progress-bar-wrapper {
     border-radius: 25px;
-    border:2px solid #aaaaaa;
+    border: 2px solid #aaaaaa;
 }
 
 .pt-wheel-bg {
@@ -290,7 +288,6 @@ END bootstrap overrides
 }
 
 .pt-inner-circle {
-   
     position: absolute;
     top: 88px;
     left: 87px;
@@ -394,7 +391,6 @@ END bootstrap overrides
     margin: auto;
     text-align: center;
 }
-
 /* svg hover state */
 
 .pt-language-selector:hover g,
@@ -495,10 +491,10 @@ END bootstrap overrides
     text-align: right;
 }
 
-.pt-verbatim-translation-labels>div>p{
+.pt-verbatim-translation-labels>div>p {
     width: 100%;
-} 
- 
+}
+
 .pt-verbatim-translation-languages {
     display: none;
 }
@@ -582,14 +578,14 @@ END bootstrap overrides
 
 .pt-top-buttons-wrapper input {
     text-align: center;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 /*
 buttons
  */
 
 .button-accept,
-.button-cancel, 
+.button-cancel,
 .button-verbatim-translation {
     width: 140px;
     padding: 8px 39px;
@@ -631,4 +627,3 @@ buttons
     color: #ffffff;
     background: #d24906;
 }
-/* 1700- 1830*/

@@ -49,16 +49,16 @@ $(document).ready(function() {
             $(this)
                 .css('border', '2px solid #AAA');
         }
-    )
-    
+    );
+
     $('.button-verbatim-translation').click(
         function() {
-            if(previousSelectedButton !=  null) {
+            if(previousSelectedButton !==  null) {
                 $(previousSelectedButton).removeClass("button-verbatim-translation-selected");
-            } else 
+            } else
                 $('#number').removeClass("button-verbatim-translation-selected");
             $(this).toggleClass('button-verbatim-translation-selected');
-            
+
             if(this.id=='number'){
                 $(".pt-verbatim-translation-languages").hide();
                 $(".pt-verbatim-translation-labels").fadeIn();
@@ -67,8 +67,8 @@ $(document).ready(function() {
                 $(".pt-verbatim-translation-languages").fadeIn();
             }
             previousSelectedButton = this;
-        }         
-    )
+        }
+    );
 });
 
 
