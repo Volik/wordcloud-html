@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    var lastOpened='';
+    var lastOpened = '';
 
-    var lastOpenedSelector='';
+    var lastOpenedSelector = '';
 
-    var previousSelectedButton=null;
+    var previousSelectedButton = null;
 
     $('.pt-options-list a').hover(
         function() {
@@ -27,20 +27,20 @@ $(document).ready(function() {
             // hide all other containers
             $(lastOpened).hide();
             // remove all other active classes
-           // alert(this);
-            $(lastOpenedSelector).removeClass(lastOpenedSelector.substring(1)+'-active');
+            // alert(this);
+            $(lastOpenedSelector).removeClass(lastOpenedSelector.substring(1) + '-active');
             // set the active class
-            $(this).toggleClass(this.className+'-active');
+            $(this).toggleClass(this.className + '-active');
             // show current container and form controls
-            var content_classname = '.'+this.className.split(' ')[0].substring(0,this.className.split(' ')[0].lastIndexOf('-selector'))+'-content';
+            var content_classname = '.' + this.className.split(' ')[0].substring(0, this.className.split(' ')[0].lastIndexOf('-selector')) + '-content';
             $(content_classname).fadeIn();
             $('.buttons-wrapper').fadeIn();
             lastOpened = content_classname;
-            lastOpenedSelector = '.'+this.className.split(' ')[0];
+            lastOpenedSelector = '.' + this.className.split(' ')[0];
         }
     );
 
-    $('.pt-progress-bar-wrapper').hover (
+    $('.pt-progress-bar-wrapper').hover(
         function() {
             $(this)
                 .css('border', '2px solid #00F');
@@ -53,13 +53,13 @@ $(document).ready(function() {
 
     $('.button-verbatim-translation').click(
         function() {
-            if(previousSelectedButton !==  null) {
+            if (previousSelectedButton !== null) {
                 $(previousSelectedButton).removeClass("button-verbatim-translation-selected");
             } else
                 $('#number').removeClass("button-verbatim-translation-selected");
             $(this).toggleClass('button-verbatim-translation-selected');
 
-            if(this.id=='number'){
+            if (this.id == 'number') {
                 $(".pt-verbatim-translation-languages").hide();
                 $(".pt-verbatim-translation-labels").fadeIn();
             } else {
@@ -69,6 +69,12 @@ $(document).ready(function() {
             previousSelectedButton = this;
         }
     );
+
+    $("#datepicker").datepicker({
+        firstDay: 1,
+        buttonImageOnly: true,
+        showOtherMonths: true,
+        selectOtherMonths: true,
+    });
+
 });
-
-
